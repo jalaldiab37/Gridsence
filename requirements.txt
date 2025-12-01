@@ -1,0 +1,39 @@
+# GridSense - Smart Grid Load Forecasting & Outage Simulation
+# Core Dependencies
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Time Series & Forecasting
+prophet>=1.1.4
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+tensorflow>=2.13.0
+keras>=2.13.0
+
+# Visualization & Dashboard
+streamlit>=1.28.0
+plotly>=5.18.0
+matplotlib>=3.7.0
+
+# PDF Generation
+reportlab>=4.0.0
+fpdf2>=2.7.0
+
+# Data Sources & APIs
+requests>=2.31.0
+opendatasets>=0.1.22
+
+# Utilities
+python-dateutil>=2.8.0
+pytz>=2023.3
+tqdm>=4.66.0
+joblib>=1.3.0
+
+# Optional: Reinforcement Learning
+# gymnasium>=0.29.0
+# stable-baselines3>=2.1.0
+
+
