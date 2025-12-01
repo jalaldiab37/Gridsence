@@ -1,10 +1,10 @@
-# ⚡ GridSense
+# GridSense
 
 **Smart Grid Load Forecasting & Outage Risk Simulation System**
 
 GridSense is a comprehensive software-based electrical engineering simulation platform designed to predict power grid loads and assess outage risks. It combines machine learning forecasting with grid stability simulation to help grid operators make informed decisions about demand management and risk mitigation.
 
-## 🎯 Purpose
+## Purpose
 
 Modern power grids face increasing challenges from variable renewable energy sources, extreme weather events, and growing demand. GridSense addresses these challenges by providing:
 
@@ -13,7 +13,7 @@ Modern power grids face increasing challenges from variable renewable energy sou
 - **Scenario Simulation**: Model extreme events like heat waves, equipment failures, and demand surges
 - **Actionable Insights**: Generate mitigation recommendations before critical situations occur
 
-## 📊 Dataset Details
+## Dataset Details
 
 GridSense supports multiple data sources for electrical load analysis:
 
@@ -27,7 +27,7 @@ GridSense supports multiple data sources for electrical load analysis:
 
 The synthetic data generator models realistic load patterns including temperature correlation, peak/off-peak cycles, weekend effects, industrial spikes, and seasonal variations (HVAC loads).
 
-## 🤖 Forecasting Models
+## Forecasting Models
 
 GridSense implements three complementary forecasting approaches:
 
@@ -39,19 +39,19 @@ GridSense implements three complementary forecasting approaches:
 
 All models are evaluated using **MAPE** (Mean Absolute Percentage Error) and **RMSE** (Root Mean Square Error) metrics, with typical accuracy of 3-5% MAPE on well-structured data.
 
-## 🔌 Grid Simulation Engine
+## Grid Simulation Engine
 
 The simulation engine models grid behavior under stress conditions:
 
 - **Load Factor Monitoring**: Continuous tracking of capacity utilization
-- **Risk Classification**: Four-tier system (Green → Yellow → Orange → Red)
+- **Risk Classification**: Four-tier system (Green, Yellow, Orange, Red)
 - **Breaker Response**: Simulated circuit breaker delays and cascading failure risks
 - **Load Shedding**: Automatic calculation of affected zones during overload
 - **Scenario Library**: Pre-built scenarios including heat waves, cold snaps, industrial surges, and equipment failures
 
 Adjustable parameters include demand growth rate, renewable penetration, generator outages, and transmission constraints.
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Install dependencies
@@ -67,7 +67,7 @@ python main.py dashboard
 python main.py train --model xgboost
 ```
 
-## 📸 Dashboard Features
+## Dashboard Features
 
 The Streamlit-powered dashboard provides:
 
@@ -77,7 +77,7 @@ The Streamlit-powered dashboard provides:
 - **Scenario Toggle**: Switch between simulation scenarios on-the-fly
 - **PDF Export**: Generate detailed reports for stakeholder communication
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 gridsense/
@@ -89,12 +89,10 @@ gridsense/
 └── requirements.txt
 ```
 
-## 📄 License
+## License
 
 MIT License - See LICENSE file for details.
 
 ---
 
-*GridSense - Powering smarter grid decisions through predictive intelligence*
-
-
+**Made by Jalal Diab**
