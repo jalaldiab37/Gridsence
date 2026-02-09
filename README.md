@@ -8,15 +8,15 @@ GridSense is a software-based simulation platform for electrical power grid anal
 
 ## Table of Contents
 
-1. [Motivation and Scope](#motivation-and-scope)
-2. [System Architecture](#system-architecture)
-3. [Data and Assumptions](#data-and-assumptions)
-4. [Forecasting Models](#forecasting-models)
-5. [Grid Simulation Engine](#grid-simulation-engine)
-6. [Dashboard Features](#dashboard-features)
+1. [Motivation and Scope](#motivation and scope)
+2. [System Architecture](#system architecture)
+3. [Data and Assumptions](#data and assumptions)
+4. [Forecasting Models](#forecasting models)
+5. [Grid Simulation Engine](#grid simulation engine)
+6. [Dashboard Features](#dashboard features)
 7. [Limitations](#limitations)
 8. [Quick Start](#quick-start)
-9. [Project Structure](#project-structure)
+9. [Project Structure](#project structure)
 10. [Roadmap](#roadmap)
 11. [License](#license)
 
@@ -33,7 +33,7 @@ GridSense addresses these challenges in an educational context by providing:
 - **Scenario Simulation**: Model stress conditions including extreme weather events, equipment failures, and demand surges.
 - **Visualization**: Present forecasts, risk indicators, and simulation outcomes through an interactive dashboard.
 
-**Important**: GridSense is an educational and research tool designed for learning and experimentation. It is not intended to replace production-grade energy management systems or serve as operational decision-support software for grid operators.
+**Important**: GridSense is an educational and research tool designed for learning and experimentation. It is not intended to replace production-grade energy management systems or serve as operational decision support software for grid operators.
 
 ---
 
@@ -79,7 +79,7 @@ A Streamlit-based dashboard provides interactive access to forecasts, real-time 
 
 ### Synthetic Data Generation
 
-The built-in synthetic generator produces realistic load profiles by combining:
+The built in synthetic generator produces realistic load profiles by combining:
 
 - **Daily patterns**: Sinusoidal variation with peaks during afternoon hours and troughs overnight.
 - **Weekly patterns**: Reduced demand on weekends (approximately 15% lower than weekdays).
@@ -112,13 +112,13 @@ GridSense employs several simplifications for tractability:
 
 The LSTM implementation uses a two-layer architecture with dropout regularization to capture long-term temporal dependencies in load sequences. Input sequences of 24 hourly observations are used to predict the next time step, with recursive application for multi-step horizons.
 
-Typical performance on well-structured data:
+Typical performance on well structured data:
 - MAPE: 4-7% depending on forecast horizon and data quality
 - RMSE: Varies with load magnitude; generally proportional to mean load
 
 ### XGBoost
 
-XGBoost provides gradient-boosted decision tree ensembles trained on engineered features including:
+XGBoost provides gradient boosted decision tree ensembles trained on engineered features including:
 
 - Cyclical encodings of hour, day-of-week, and month
 - Lag features (1-hour, 24-hour, 168-hour lookbacks)
@@ -184,7 +184,7 @@ Custom scenarios can be defined by specifying demand growth rates, weather condi
 
 The Streamlit dashboard provides four primary views:
 
-- **Live Monitoring**: Time-series visualization of current load with capacity threshold overlays and a color-coded risk gauge indicating system stress level.
+- **Live Monitoring**: Time series visualization of current load with capacity threshold overlays and a color coded risk gauge indicating system stress level.
 - **Forecast**: Interactive forecast generation with selectable horizons (24 hours, 7 days, 30 days) and model types. Displays prediction intervals and summary statistics.
 - **Simulation**: Scenario selection and parameter adjustment interface. Outputs include load profiles, risk timelines, and recommended mitigation actions.
 - **Reports**: PDF export functionality for generating analysis summaries suitable for documentation or presentation.
@@ -197,9 +197,9 @@ GridSense is designed for educational purposes and incorporates several simplifi
 
 1. **No AC Power Flow**: The simulation does not perform full AC power flow analysis or optimal power flow (OPF) calculations. Voltage, reactive power, and line losses are not modeled.
 
-2. **Simplified Transmission**: The single-bus model ignores network topology, congestion, and locational pricing effects.
+2. **Simplified Transmission**: The single bus model ignores network topology, congestion, and locational pricing effects.
 
-3. **Statistical Weather Effects**: Temperature and weather impacts use statistical correlations rather than physics-based building thermal models or meteorological forecasts.
+3. **Statistical Weather Effects**: Temperature and weather impacts use statistical correlations rather than physics based building thermal models or meteorological forecasts.
 
 4. **No Market Dynamics**: Electricity market behavior, price formation, and economic dispatch optimization are not represented.
 
@@ -286,7 +286,7 @@ Planned enhancements for future development:
 
 2. **Probabilistic Forecasting**: Add uncertainty quantification to predictions using quantile regression or ensemble spread.
 
-3. **Weather Data Coupling**: Integrate real-time or forecast weather data from public APIs for improved load correlation.
+3. **Weather Data Coupling**: Integrate real time or forecast weather data from public APIs for improved load correlation.
 
 4. **Containerization**: Provide Docker configuration for simplified deployment and reproducibility.
 
@@ -294,7 +294,7 @@ Planned enhancements for future development:
 
 6. **Regional Calibration**: Support geographic customization of load patterns and grid parameters for different utility service territories.
 
-7. **Demand Response Modeling**: Implement behavioral models for price-responsive and incentive-based demand reduction programs.
+7. **Demand Response Modeling**: Implement behavioral models for price responsive and incentive-based demand reduction programs.
 
 ---
 
